@@ -1,0 +1,7 @@
+Options -Indexes +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^heorhiraik.com [NC]
+RewriteRule ^(.*)$ http://www.heorhiraik.com$1 [L,R=301]
+
